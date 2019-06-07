@@ -26,9 +26,12 @@ namespace OdeToFood.Data
 
         public IEnumerable<Restaurant> GetAll()
         {
+            return restaurants;
+            /*
             return from r in restaurants
                    orderby r.Name
                    select r;
+            */
         }
     }
 }
