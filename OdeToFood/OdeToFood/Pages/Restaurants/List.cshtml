@@ -18,15 +18,18 @@
 <table class="table">
     @foreach (var restaurant in Model.Restaurants)
     {
-        <tr>
-            <td>@restaurant.Name</td>
-            <td>@restaurant.Location</td>
-            <td>@restaurant.Cuisine</td>
-            <td>
-                <!--<a class="btn btn-lg" href="/Restaurants/Details/?restaurantId=@restaurant.Id">Details</a>-->
-                <a class="btn btn-outline-danger btn-sm" asp-page="./Detail" asp-route-restaurantID="@restaurant.Id">Details</a>
-            </td>
-        </tr>
+    <tr>
+        <td>@restaurant.Name</td>
+        <td>@restaurant.Location</td>
+        <td>@restaurant.Cuisine</td>
+        <td>
+            <a class="btn btn-secondary btn-sm" asp-page="./Detail" asp-route-restaurantID="@restaurant.Id">Details</a>
+        </td>
+        <td>
+            <a class="btn btn-outline-secondary btn-sm" asp-page="./Edit" asp-route-restaurantID="@restaurant.Id">Edit</a>
+        </td>
+
+    </tr>
     }
 
 </table>
