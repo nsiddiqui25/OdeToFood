@@ -28,6 +28,7 @@ namespace OdeToFood.Pages.Restaurants
         }
 
         public void OnGet()
+            //OnGet() method is what responds to an HttpGet request
         {
             Message = config["Message"];
             Restaurants = restaurantData.GetRestaurantsByName(SearchTerm);

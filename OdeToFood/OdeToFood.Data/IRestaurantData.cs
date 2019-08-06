@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
+// this is an interface definition
+// here we're adding in-memory data that will only work during development
 namespace OdeToFood.Data
 {
     public interface IRestaurantData
@@ -23,7 +26,7 @@ namespace OdeToFood.Data
         {
             restaurants = new List<Restaurant>()
             {
-                new Restaurant { Id = 1, Name = "Ganda Kachra", Location = "Delhi", Cuisine = CuisineType.Indian },
+                new Restaurant { Id = 1, Name = "MilkTruck JustArrive", Location = "Delhi", Cuisine = CuisineType.Indian },
                 new Restaurant { Id = 2, Name = "Pasta DeNiro", Location = "Andolini", Cuisine = CuisineType.Italian },
                 new Restaurant { Id = 3, Name = "Narcos Guapos", Location = "Guadalajara", Cuisine = CuisineType.Mexican }
             };
